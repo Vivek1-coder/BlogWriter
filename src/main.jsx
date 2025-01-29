@@ -92,8 +92,12 @@ const router = createBrowserRouter([
             element: <Post />,
         },
     ],
+    
 },
-])
+],
+{
+    basename: "/BlogWriter", // Set the base path here
+  })
 createRoot(document.getElementById('root')).render(
  <StrictMode>
     <Provider store = {store}>
